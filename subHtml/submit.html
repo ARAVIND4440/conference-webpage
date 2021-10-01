@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Webpage</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body{
+            background: none;
+            position: relative;
+        }
+        .form{
+            position: absolute;
+            top: 100%;
+            left: 34%;
+            margin-top: 30px;
+            border: 2px dotted #0088fff1;
+            padding: 50px;
+        }
+        h2{
+            text-align: center;
+            padding: 20px 0;
+        }
+        .terms{
+            display: flex;
+            justify-content: space-evenly;
+            color: #333;
+        }
+
+        #btn{
+            margin: 10px auto;
+            width: 100%;
+            display: block;
+            background-color: #0088fff1;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 1.4rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <p>Publish Your Paper</p>
+       <div class="nav">
+           <a href="../index.html" target="_self" id="home">Home</a>
+           <a href="./submit.html" id="About" target="_blank">Submit</a>
+           <a href="./help.html" target="_blank">Help</a>
+           <a href="./login.html" target="_blank" id="login">Login</a>
+       </div>
+    </nav>
+    <div class="form">
+        <form action="" method="post" id="">
+            <h2>Paper Details</h2>
+            <label for="title">Paper Title</label>
+            <input type="text" name="title" id="title" required>
+            <br><br>
+            <label for="author">Authors</label>
+            <input type="text" name="author" id="author" required>
+            <br><br>
+            <label for="file">Upload your paper:</label>
+            <input type="file" id="file" name="file" accept=".pdf" required>
+            <br><br>
+            <label for="email">Email</label></td>
+            <input type="email" name="email" id="email" maxlength="100" required>
+            <br><br>
+            <label for="field">Domain</label></td>
+            <select name="domain" id="domain" required>
+                 <option value=""> Choose your domain</option>
+                <option value="AAA">Aeronautics and Astronautics</option>
+                <option value="BE">Bioengineering</option>
+                <option value="CE">Chemical Engineering</option>
+                <option value="CEE">Civil and Environmental Engineering</option>
+                <option value="CSE">Computer Science</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="MECH">Mechanical Engineering</option>
+                <option value="MATH">Mathematics</option>
+                <option value="Others">Other Research Areas</option>
+            
+            </select>
+            <br><br><br>
+            <div class="terms">
+                <input type="checkbox" name="agree" id="agree" required><b style="color:#333"> I agree the terms and conditions!</b><br>
+            </div>
+                <input class="submit" id="btn" name="submit" type="submit" value="Submit">
+        </form>
+    </div>
+        
+</body>
+</html>
